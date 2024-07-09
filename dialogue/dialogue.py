@@ -1,4 +1,6 @@
-mathematician_filenames = {
+mathematicians_filepaths = {
+    
+    
     "Fibonacci": "dialogue/fibonacci_dialogue.txt",  
 }
 
@@ -6,7 +8,7 @@ def mathematician_filepath_find(mathematician_name: str) -> str:
     # f: Helper function that takes care of fetching the path to a given mathematician's image
     # Input(s): Name of the mathematician (mathematician_name)
     # Output(s): Path to a given mathematician's image
-    return mathematician_filenames.get(mathematician_name, "Mathematician's image not found")
+    return mathematicians_filepaths.get(mathematician_name, "Mathematician's image not found")
 
 def read_image_from_file(filepath: str) -> str:
     # f: ...
